@@ -1,0 +1,6 @@
+config:
+  aws:region: us-east-1
+  aws:profile: AdministratorAccess-008971633228
+  portfolio_backend:notion_blog_database_id: 1ae343219d8480059faec65e8bc1b765
+  portfolio_backend:notion_integration_key:
+    secure: AAABAItZBDw76Vev8Cb1J/jZpJPlo5GqRXa61W/wa/C/DNI2ym+CBTo1GvlcfFEhVgg9rl+iaMOaOnHzYn0N04vmTbGMEQrl36UOpT2g6QwL/A==

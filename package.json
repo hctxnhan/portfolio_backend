@@ -2,9 +2,9 @@
   "name": "portfolio_backend",
   "main": "index.ts",
   "devDependencies": {
+    "@types/aws-lambda": "^8.10.147",
     "@types/node": "^18",
-    "typescript": "^5.0.0",
-    "@types/aws-lambda": "^8.10.147"
+    "typescript": "^5.0.0"
   },
   "dependencies": {
     "@pulumi/aws": "^6.0.0",
