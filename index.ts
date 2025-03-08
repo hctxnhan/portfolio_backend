@@ -39,6 +39,7 @@ const lambda = new aws.lambda.Function("lambda", {
     variables: {
       NOTION_INTEGRATION_KEY: notionIntegrationKey,
       NOTION_BLOG_DATABASE_ID: config.require("notion_blog_database_id"),
+      NOTION_WORK_DATABASE_ID: config.require("notion_work_database_id"),
     },
   },
 });
@@ -46,6 +47,12 @@ const lambda = new aws.lambda.Function("lambda", {
 // API GATEWAY
 const api = new aws.apigatewayv2.Api("api", {
   protocolType: "HTTP",
+  corsConfiguration: {
+    allowOrigins: ["http://localhost:8080"],
+    allowMethods: ["GET"],
+    allowHeaders: ["*"],
+    maxAge: 600,
+  },
 });
 
 // API LAMBDA INTEGRATION
