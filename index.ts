@@ -90,8 +90,8 @@ const stage = new aws.apigatewayv2.Stage("stage", {
   routeSettings: [
     {
       routeKey: route.routeKey,
-      throttlingBurstLimit: 500,
-      throttlingRateLimit: 1000,
+      throttlingBurstLimit: 50,
+      throttlingRateLimit: 10,
     },
   ],
   autoDeploy: true,
